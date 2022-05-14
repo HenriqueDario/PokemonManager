@@ -9,13 +9,13 @@ namespace PokemonManager.Models
     {
         private string Username { get; set; }
         private string Password { get; set; }
-        private UserLevel level { get; set; }
+        private UserLevel Level { get; set; }
     }
 
     enum UserLevel
     {
-        Admin,
-        common,
-        Mod
+        common = 1,
+        Admin = 2,
+        Mod = 3
     }
 }
